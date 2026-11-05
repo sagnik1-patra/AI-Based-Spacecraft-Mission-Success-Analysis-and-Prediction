@@ -1,0 +1,31 @@
+project:
+  name: AI-Based Spacecraft Mission Success Analysis and Prediction
+  algorithm: Artificial Immune System
+  optimization: Clonal Selection Algorithm
+  version: '1.0'
+dataset:
+  filename: RS_Session_266_AU_2850_2.csv
+  records: 5
+  features:
+  - Year
+  target: Success_Rate
+ais_parameters:
+  population_size: 60
+  generations: 250
+  selected_antibodies: 12
+  clones_per_antibody: 8
+  mutation_rate: 0.15
+  random_replacements: 8
+  polynomial_degree: 2
+  regularization: 0.01
+  random_state: 42
+forecast:
+  start_year: 2025
+  end_year: 2030
+  validated: false
+model:
+  filename: ais_model.pkl
+  type: AIS-Optimized Polynomial Regression
+evaluation:
+  type: Training Only
+  independent_validation: false

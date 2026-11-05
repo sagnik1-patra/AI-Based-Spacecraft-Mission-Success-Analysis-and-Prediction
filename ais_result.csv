@@ -1,0 +1,6 @@
+Year,Total_Missions,Successful_Missions,Failed_Missions,Actual_Success_Rate,Actual_Failure_Rate,AIS_Predicted_Success_Rate,AIS_Absolute_Error,AIS_Squared_Error
+2020,3,3,0,100.0,0.0,67.0579,32.9421,1085.1847
+2021,1,0,1,0.0,100.0,73.1411,73.1411,5349.6204
+2022,6,6,0,100.0,0.0,79.613,20.387,415.6307
+2023,4,4,0,100.0,0.0,86.4735,13.5265,182.9663
+2024,4,4,0,100.0,0.0,93.7227,6.2773,39.4051

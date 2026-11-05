@@ -1,0 +1,31 @@
+project:
+  name: AI-Based Spacecraft Mission Success Analysis and Prediction
+  algorithm: Particle Swarm Optimization
+  version: '1.0'
+dataset:
+  filename: RS_Session_266_AU_2850_2.csv
+  records: 5
+  features:
+  - Year
+  target: Success_Rate
+pso_parameters:
+  particles: 60
+  iterations: 250
+  inertia_weight: 0.7
+  cognitive_coefficient: 1.5
+  social_coefficient: 1.5
+  polynomial_degree: 2
+  regularization: 0.01
+  lower_bound: -200.0
+  upper_bound: 200.0
+  random_state: 42
+forecast:
+  start_year: 2025
+  end_year: 2030
+  validated: false
+model:
+  filename: pso_model.pkl
+  type: PSO-Optimized Polynomial Regression
+evaluation:
+  type: Training Only
+  independent_validation: false

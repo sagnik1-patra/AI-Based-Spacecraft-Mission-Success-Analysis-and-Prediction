@@ -1,0 +1,2 @@
+Model,Training_MAE,Training_MSE,Training_RMSE,Training_R2,Best_Fitness,Generations,Population_Size,Evaluation_Type
+AIS_CLONALG,29.254823376592686,1414.5614352484647,37.610655873681125,0.11589910296970962,1462.775624952372,250,60,Training Only

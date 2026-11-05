@@ -1,0 +1,51 @@
+{
+    "project_name": "AI-Based Spacecraft Mission Success Analysis and Prediction",
+    "algorithm": "AIS_CLONALG",
+    "created_at": "2026-11-05T20:08:35.198626",
+    "dataset": {
+        "records": 5,
+        "start_year": 2020,
+        "end_year": 2024,
+        "total_missions": 18,
+        "successful_missions": 17,
+        "failed_missions": 1,
+        "overall_success_rate": 94.44444444444444
+    },
+    "model": {
+        "type": "Polynomial Regression",
+        "optimization": "Clonal Selection",
+        "coefficients": [
+            79.61297792122133,
+            66.66197993902894,
+            19.43191706958507
+        ],
+        "degree": 2,
+        "best_fitness": 1462.775624952372
+    },
+    "training_metrics": {
+        "MAE": 29.254823376592686,
+        "MSE": 1414.5614352484647,
+        "RMSE": 37.610655873681125,
+        "R2": 0.11589910296970962
+    },
+    "limitations": {
+        "training_only": true,
+        "validated_forecasts": false,
+        "small_dataset": true,
+        "partial_2024_observation": true,
+        "note": "Five annual observations are insufficient for reliable predictive validation. Forecasts are exploratory."
+    },
+    "generated_files": [
+        "ais_model.pkl",
+        "ais_config.yaml",
+        "ais_metadata.json",
+        "ais_accuracy_graph.png",
+        "ais_heatmap.png",
+        "ais_comparison_graph.png",
+        "ais_result.csv",
+        "ais_result_graph.png",
+        "ais_prediction.csv",
+        "ais_prediction_graph.png",
+        "ais_model_comparison_metrics.csv"
+    ]
+}

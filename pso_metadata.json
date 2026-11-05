@@ -1,0 +1,51 @@
+{
+    "project_name": "AI-Based Spacecraft Mission Success Analysis and Prediction",
+    "algorithm": "Particle Swarm Optimization",
+    "created_at": "2026-11-05T20:18:37.853803",
+    "dataset": {
+        "records": 5,
+        "start_year": 2020,
+        "end_year": 2024,
+        "total_missions": 18,
+        "successful_missions": 17,
+        "failed_missions": 1,
+        "overall_success_rate": 94.44444444444444
+    },
+    "model": {
+        "type": "Polynomial Regression",
+        "optimization": "PSO",
+        "coefficients": [
+            79.61089502191041,
+            66.66666548293328,
+            19.45525535732099
+        ],
+        "degree": 2,
+        "best_fitness": 1462.7756160830083
+    },
+    "training_metrics": {
+        "MAE": 29.25551228181928,
+        "MSE": 1414.5461036066895,
+        "RMSE": 37.610452052676656,
+        "R2": 0.11590868524581899
+    },
+    "limitations": {
+        "training_only": true,
+        "validated_forecasts": false,
+        "small_dataset": true,
+        "partial_2024_observation": true,
+        "note": "Only five annual observations are available. Training metrics are not independent validation. Forecasts are exploratory."
+    },
+    "generated_files": [
+        "pso_model.pkl",
+        "pso_config.yaml",
+        "pso_metadata.json",
+        "pso_accuracy_graph.png",
+        "pso_heatmap.png",
+        "pso_comparison_graph.png",
+        "pso_result.csv",
+        "pso_result_graph.png",
+        "pso_prediction.csv",
+        "pso_prediction_graph.png",
+        "pso_model_comparison_metrics.csv"
+    ]
+}

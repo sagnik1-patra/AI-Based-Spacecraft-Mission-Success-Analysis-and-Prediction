@@ -1,0 +1,2 @@
+Model,Training_MAE,Training_MSE,Training_RMSE,Training_R2,Best_Fitness,Iterations,Particles,Evaluation_Type
+PSO,29.25551228181928,1414.5461036066895,37.610452052676656,0.11590868524581899,1462.7756160830083,250,60,Training Only
