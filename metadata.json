@@ -1,0 +1,42 @@
+{
+    "project_name": "AI-Based Spacecraft Mission Success Analysis and Prediction",
+    "created_at": "2026-11-03T13:38:14.582673",
+    "dataset_information": {
+        "filename": "RS_Session_266_AU_2850_2.csv",
+        "total_records": 5,
+        "start_year": 2020,
+        "end_year": 2024,
+        "total_missions": 18,
+        "successful_missions": 17,
+        "failed_missions": 1,
+        "overall_success_rate": 94.44444444444444
+    },
+    "features": [
+        "Year"
+    ],
+    "target": "Success_Rate",
+    "models": {
+        "random_forest": {
+            "model_file": "spacecraft_model.pkl",
+            "training_mae": 16.8,
+            "training_mse": 441.2,
+            "training_rmse": 21.004761364985796,
+            "training_r2": 0.7242500000000001
+        },
+        "deep_learning": {
+            "model_file": "spacecraft_model.h5",
+            "scaler_file": "spacecraft_scaler.pkl",
+            "epochs_completed": 500,
+            "training_mae": 21.440834045410156,
+            "training_mse": 736.4862060546875,
+            "training_rmse": 27.13827934955876,
+            "training_r2": 0.5396960973739624
+        }
+    },
+    "limitations": {
+        "evaluation": "Training data only",
+        "independent_test_set": false,
+        "reason": "Only five annual observations are available. Results cannot establish reliable predictive accuracy.",
+        "2024_data": "Partial year through December 10, 2024"
+    }
+}

@@ -1,0 +1,43 @@
+project:
+  name: AI-Based Spacecraft Mission Success Analysis and Prediction
+  version: '1.0'
+  description: Exploratory spacecraft mission success rate analysis using machine
+    learning
+dataset:
+  file: RS_Session_266_AU_2850_2.csv
+  records: 5
+  features:
+  - Year
+  target: Success_Rate
+preprocessing:
+  remove_duplicates: true
+  handle_missing_values: true
+  feature_scaling: StandardScaler
+random_forest:
+  algorithm: RandomForestRegressor
+  n_estimators: 100
+  max_depth: 3
+  random_state: 42
+  model_file: spacecraft_model.pkl
+deep_learning:
+  framework: TensorFlow
+  model_type: Sequential
+  hidden_layers:
+  - 64
+  - 32
+  - 16
+  activation: relu
+  optimizer: Adam
+  learning_rate: 0.001
+  epochs: 500
+  batch_size: 2
+  model_file: spacecraft_model.h5
+  scaler_file: spacecraft_scaler.pkl
+evaluation:
+  metrics:
+  - MAE
+  - MSE
+  - RMSE
+  - R2
+  evaluation_type: training_only
+  validated: false
